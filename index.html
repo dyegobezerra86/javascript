@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora
+    </h1>
+    <input id="n1" type="text">
+    <div id="sinal">+</div>
+    <input id="n2" type="text">
+    <p id="resultado"></p>
+    <button onClick="soma()">+</button>
+    <button onClick="subtracao()">-</button>
+    <button onClick="mult()">*</button>
+    <button onClick="div()">/</button>
+</body>
+<script>
+    /*let n1 = window.prompt("Digite um número:")
+    let n2 = window.prompt("Digite um segundo número para subtrairmos:")
+    let resultado = Number(n1) - Number(n2)
+    alert("Seu resultado é: " + resultado)*/
+
+    //let idade = window.prompt("Quantos anos de idade você tem?")
+    //alert("Parabéns pelos seus " + idade + " anos de vida!")
+
+    //let nome = window.prompt("Qual seu primeiro nome?")
+    //let sobrenome = window.prompt("Qual seu segundo nome?")
+    //console.log(`Seja bem vindo, ${nome} ${sobrenome} !`)
+
+        function soma() {
+            resultado.innerHTML = Number(n1.value) + Number(n1.value)
+            sinal.innerHTML = "+"
+        }
+        function subtracao() {
+            resultado.innerHTML = Number(n1.value) - Number(n1.value)
+            sinal.innerHTML = "-"
+        }
+        function mult() {
+            resultado.innerHTML = Number(n1.value) * Number(n1.value)
+            sinal.innerHTML = "*"
+        }
+        function div() {
+            resultado.innerHTML = Number(n1.value) / Number(n1.value)
+            sinal.innerHTML = "/"
+        }
+</script>
+</html>
