@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+<body>
+    <h1>Condicionais Javascript</h1>
+
+    <script>
+        let cor = window.prompt('Escreva o nome de uma das seguintes cores: azul, amarelo, verde e branco:').toLowerCase()
+        //let cor = window.prompt('Acerte minha cor preferida').toLowerCase()
+
+        switch (cor) {
+            
+            case 'azul':
+                window.alert('Azul do céu!')
+                break;
+            case 'amarelo':
+                window.alert('Cor do ouro!')
+                break;
+            case 'verde':
+                window.alert('Cor das matas!')
+                break;
+            case 'branco':
+                window.alert('Cor da paz!')
+                break;
+        
+            default:
+                window.alert('Essa cor não representa a nossa bandeira!')
+                break;
+        }
+        
+        //if (nome == 'diego' && cor == 'azul' ) {
+        //   window.alert('Você acertou tudo!');
+        //} else if (nome == 'diego' || cor == 'azul') {
+        //    window.alert('Você acertou uma das opções!');
+        //} else {
+        //    window.alert('Você não acertou nenhuma das opções!')
+        //}
+
+        //if (idade < 12) {
+            //console.log("Você é uma criança!");
+          //  window.alert('Você é uma criança!')   
+        //}
+
+        //if else (idade >= 12 && idade < 18) {
+        //   console.log('Você é um adolescente!')
+        //    window.alert('Você é um adolescente!')
+        //}
+
+        //if (idade >= 18 && idade < 60) {
+        //    console.log('Você é um adulto!')
+        //    window.alert('Você é um adulto!')
+        //}
+
+        //if (idade >= 60) {
+        //   console.log("Você é um idoso!")
+        //    window.alert("Você é um idoso!")
+        //}
+
+    </script>
+
+</body>
+</html>
