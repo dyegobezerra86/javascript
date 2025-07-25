@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total de Vendas</title>
+</head>
+<body>
+    <h1>Total de Vendas</h1>
+
+    <script>
+        let totalVendas = 0;
+let valorVenda;
+
+console.log("Digite o valor de cada venda. Digite 0 para finalizar.");
+
+while (true) {
+  valorVenda = prompt("Digite o valor da venda:");
+
+  // Verifica se o usuário cancelou o prompt ou digitou algo não numérico
+  if (valorVenda === null || isNaN(parseFloat(valorVenda))) {
+    alert("Entrada inválida. Por favor, digite um número ou 0 para finalizar.");
+    continue; // Volta para a próxima iteração do loop
+  }
+
+  valorVenda = parseFloat(valorVenda);
+
+  if (valorVenda === 0) {
+    break; // Sai do loop quando o usuário digita 0
+  }
+
+  totalVendas += valorVenda;
+}
+
+alert(`O total de vendas do dia foi de: R$ ${totalVendas.toFixed(2)}`);
+console.log(`O total de vendas do dia foi de: R$ ${totalVendas.toFixed(2)}`);
+
+    </script>
+</body>
+</html>
