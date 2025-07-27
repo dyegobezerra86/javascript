@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura</title>
+</head>
+<body>
+    <script>
+        let temperatura = Number(prompt('Digite uma temperatura e veja a classificação:'))
+
+        if (temperatura <= 25 && temperatura >= 15) {
+            console.log(`A temperatura de ${temperatura}°C é considerada agradável!`)
+        } else if (temperatura < 15){
+            console.log(`A temperatura de ${temperatura}°C é considerada fria!`)
+        } else {
+            console.log(`A temperatura de ${temperatura}°C é considerada quente!`)
+        }
+    </script>
+</body>
+</html>

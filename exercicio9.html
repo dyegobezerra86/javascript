@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <script>
+        let numero1 = Number(prompt('Digite o primeiro número:'))
+        let numero2 = Number(prompt('Digite o segundo número:'))
+        let operacao = prompt('Escolha o operador para os dois números: * para multiplicação | + para soma | / para divisão | - para subtração')
+
+        if (operacao == "*") {
+            let multi = numero1 * numero2
+            document.write(`O resultado da sua multiplicação é ${multi}`)
+        } else if (operacao == "+"){
+            let soma = numero1 + numero2
+            document.write(`O resultado da sua soma é de ${soma}`)
+        } else if (operacao == "/") {
+            let divisao = numero1 / numero2
+            document.write(`O resultado da sua divisão é ${divisao}`)
+        } else {
+            let subtracao = numero1 - numero2
+            document.write(`O resultado da sua subtração é ${subtracao}`)
+        }   
+    </script>
+</body>
+</html>
