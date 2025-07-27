@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior dos três números</title>
+</head>
+<body>
+    <script>
+        let numero1 = Number(prompt('Digite um número:'))
+        let numero2 = Number(prompt('Digite outro número:'))
+        let numero3 = Number(prompt('Digite mais um número:'))
+
+        if (numero1 >= numero2 && numero1 >= numero3) {
+            alert(`O número ${numero1} é o maior entre os números que você digitou!`)
+        } else if (numero2 >= numero1 && numero2 >= numero3) {
+            alert(`O número ${numero2} é o maior entre os números que você digitou!`)
+        } else{
+            alert(`O número ${numero3} é o maior entre os números que você digitou!`)
+        }
+
+    </script>
+</body>
+</html>
