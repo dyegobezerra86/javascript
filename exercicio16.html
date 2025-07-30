@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descontos</title>
+</head>
+
+<body>
+    <script>
+        let valor = Number(prompt('Qual valor do produto?'))
+
+        if (valor >= 100) {
+
+            let valor10 = valor * (1 - 0.1).toFixed(2)
+            alert(`Você recebeu 10% de desconto! Seu valor total a pagar é de R$ ${valor10}!`)
+
+        } else if (valor < 100 && valor >= 50) {
+
+            let valor5 = valor * (1 - 0.05).toFixed(2)
+            alert(`Você recebeu 5% de desconto! Seu valor total a pagar é de R$ ${valor5}!`)
+
+        } else {
+
+            alert(`Você não recebeu desconto!`)
+
+        }
+
+    </script>
+</body>
+
+</html>
